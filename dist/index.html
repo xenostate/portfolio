@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101419" />
+    <meta name="description" content="Ten Roman builds applied AI systems—from retrieval-augmented assistants and fine-tuned models to time-aware machine learning." />
+    <title>Ten Roman — Applied AI & Machine Learning</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101419'/%3E%3Cpath d='M14 19h36v8H36v24h-8V27H14z' fill='%23b8fa5b'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./assistant-config.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header shell">
+      <a class="wordmark" href="#top" aria-label="Ten Roman, back to top"><span class="wordmark-symbol">T<span>R</span></span><span>Ten Roman</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-link" href="https://github.com/xenostate" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-mark"></span> AI ENGINEERING / MACHINE LEARNING</div>
+          <h1 id="hero-title">Useful intelligence.<br /><em>Measured outcomes.</em></h1>
+          <p class="hero-lede">I build AI systems from the data layer to the interface—grounded assistants, fine-tuned models, and machine-learning workflows evaluated against real baselines.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="https://huggingface.co/tenroman" target="_blank" rel="noopener noreferrer">Hugging Face <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-index"><span>01 / 04</span><span>Selected work</span><span class="index-line"></span></div>
+        </div>
+
+        <aside class="assistant-panel" aria-labelledby="assistant-title" data-assistant-slot>
+          <div class="assistant-topline"><span class="assistant-orbit" aria-hidden="true"><span></span></span><span>WRS / PORTFOLIO ASSISTANT</span><span class="assistant-status" id="assistant-status">INTEGRATION RESERVED</span></div>
+          <div class="assistant-body" id="assistant-mount">
+            <div class="assistant-greeting"><div class="assistant-avatar" aria-hidden="true">✳</div><div><h2 id="assistant-title">Ask about my work</h2><p>This space is reserved for my WRS-powered assistant. Once connected, you’ll be able to ask about projects, methods, and results here.</p></div></div>
+            <div class="assistant-examples" aria-label="Example questions"><span>What did the flashcard fine-tune improve?</span><span>How was the churn model evaluated?</span></div>
+            <div class="assistant-input-preview" aria-hidden="true"><span>Ask a question…</span><span>↗</span></div>
+          </div>
+          <div class="assistant-footer"><span>Powered by my <a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">Web-RAG platform</a></span><span>CONNECT SOON</span></div>
+        </aside>
+      </section>
+
+      <section class="proof-strip" aria-label="Project results">
+        <div class="shell proof-grid">
+          <div><strong>3×</strong><span>flashcard count alignment<br />after fine-tuning</span></div>
+          <div><strong>24%</strong><span>higher average precision<br />than churn prevalence</span></div>
+          <div><strong>3</strong><span>time-aware validation folds<br />for model selection</span></div>
+        </div>
+      </section>
+
+      <section class="projects shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-intro"><div><span class="section-kicker">SELECTED WORK / 2024—2026</span><h2 id="projects-title">Proof in the build.<br /><em>Proof in the numbers.</em></h2></div><p>Four projects across retrieval, language-model adaptation, classical ML, and market prediction. Each one is scoped to a concrete question.</p></div>
+
+        <article class="project project-featured" aria-labelledby="rag-title">
+          <div class="project-number">01 / FEATURED</div>
+          <div class="project-content"><div class="project-tags"><span>RAG</span><span>FULL-STACK</span><span>PRODUCT</span></div><h3 id="rag-title">WRS — a knowledge-backed assistant for websites</h3><p>Crawls and indexes site content, retrieves relevant passages through hybrid search, and answers with source citations. The same backend powers an embeddable chat widget, private knowledge bases, and a Telegram bot.</p><div class="project-links"><a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a><a href="https://github.com/xenostate/ragskill" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a></div></div>
+          <div class="rag-visual" role="img" aria-label="WRS pipeline: crawl, index, hybrid retrieval, and cited answer"><span class="visual-label">SYSTEM FLOW</span><div class="pipeline"><span>CRAWL</span><i></i><span>INDEX</span><i></i><span>RETRIEVE</span><i></i><span>ANSWER</span></div><div class="retrieval-stack"><div><span>VECTOR SEARCH</span><b style="--bar:70%"></b><strong>70%</strong></div><div><span>KEYWORD SEARCH</span><b style="--bar:30%"></b><strong>30%</strong></div></div><span class="visual-footnote">Configured hybrid ranking · source-grounded responses</span></div>
+        </article>
+
+        <div class="project-pair">
+          <article class="project project-card" aria-labelledby="fine-title"><div class="project-number">02 / MODEL ADAPTATION</div><div class="project-tags"><span>QLORA</span><span>MLX</span><span>EVALUATION</span></div><h3 id="fine-title">Flashcards that know what to leave out</h3><p>Fine-tuned Qwen3-VL-8B on a curated and synthetic passage-to-flashcard dataset. The adapter learned to generate fewer, more selective cards while preserving valid JSON and the source text.</p><div class="metric-comparison"><div><small>BASE MODEL</small><strong>5<span>/20</span></strong></div><div class="metric-arrow" aria-hidden="true">→</div><div><small>FINE-TUNED</small><strong>15<span>/20</span></strong></div></div><p class="metric-caption">Exact card-count alignment on a held-out 20-passage evaluation · 3× improvement</p><div class="project-links"><a href="https://huggingface.co/tenroman/qwen3-vl-8b-flashcard-qlora" target="_blank" rel="noopener noreferrer">Model card <span aria-hidden="true">↗</span></a><a href="https://github.com/xenostate/qwen-flashcard-qlora" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div></article>
+
+          <article class="project project-card" aria-labelledby="churn-title"><div class="project-number">03 / CLASSICAL ML</div><div class="project-tags"><span>XGBOOST</span><span>TIME SERIES</span><span>CALIBRATION</span></div><h3 id="churn-title">Predicting subscription churn, 30 days ahead</h3><p>Built a point-in-time customer dataset and compared logistic regression, random forest, and XGBoost using rolling validation. Evaluated on an untouched later period and calibrated the selected model’s probabilities.</p><div class="churn-metric"><strong>0.566</strong><span>ROC AUC<br />XGBoost · held-out test</span></div><div class="baseline-compare"><span>Average precision <b>2.80%</b></span><span>Churn prevalence <b>2.25%</b></span></div><p class="metric-caption">A modest signal on synthetic data; reported against the rare-event baseline, not as a production claim.</p><div class="project-links"><a href="https://github.com/xenostate" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+
+        <article class="project project-minor" aria-labelledby="cs-title"><div class="project-number">04 / EARLIER EXPERIMENT</div><div><h3 id="cs-title">CS2 skin price direction</h3><p>Explored binary classification for whether a Steam item’s price would rise or fall over 1-, 7-, and 30-day horizons.</p></div><a href="https://github.com/xenostate/binaryclassificationcs2" target="_blank" rel="noopener noreferrer" aria-label="View CS2 price direction project on GitHub">View project <span aria-hidden="true">↗</span></a></article>
+      </section>
+
+      <section class="approach" id="approach" aria-labelledby="approach-title"><div class="shell approach-grid"><div><span class="section-kicker">HOW I WORK</span><h2 id="approach-title">Build the system.<br /><em>Keep the evidence.</em></h2></div><div class="approach-list"><div><span>01</span><p>Start with a concrete user or business question.</p></div><div><span>02</span><p>Design the data and evaluation before choosing the model.</p></div><div><span>03</span><p>Ship an interface people can actually use.</p></div></div></div></section>
+
+      <footer id="contact" class="shell footer"><div><span class="section-kicker">LET’S CONNECT</span><h2>Interested in building<br /><em>something useful?</em></h2></div><div class="footer-links"><a href="https://github.com/xenostate" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://huggingface.co/tenroman" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a><a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">WRS ↗</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Ten Roman</span><span>Applied AI / ML engineering</span><a href="#top">Back to top ↑</a></div></footer>
+    </main>
+  </body>
+</html>
