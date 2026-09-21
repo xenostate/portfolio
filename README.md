@@ -4,11 +4,9 @@ A one-page, static portfolio for applied AI and machine-learning work. Project n
 
 The English version is served at `/`, with a complete Russian translation at `/ru/`. Both pages include an EN/RU switch and reciprocal `hreflang` metadata.
 
-## Connect the portfolio assistant
+## Portfolio assistant
 
-The first-screen assistant area intentionally ships as a clearly labeled reserved space. To activate it, edit `dist/assistant-config.js` and set `embedUrl` to an HTTPS page that permits embedding and hosts your WRS-powered portfolio assistant. The portfolio will replace the placeholder with an iframe. Do not put API keys in this public JavaScript file.
-
-If you prefer the existing WRS floating widget, follow the `ragskill` project's widget installation instructions instead. It creates a bubble, not an inline chat, so the top assistant panel would need a small UI adaptation.
+The first-screen assistant card keeps its designed introduction on initial load. Activating its question field mounts WRS site `46` inside the card body using the widget's on-demand inline, headerless, dark-theme options. The assistant never becomes a floating bubble, and no API key is stored in the portfolio.
 
 ## VPS deployment
 

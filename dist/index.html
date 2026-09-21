@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./language.css" />
+    <style>.assistant-input-preview{width:100%;background:transparent;cursor:pointer;text-align:left}.assistant-input-preview:hover{border-color:#b8fa5b;color:#c6d0c9}</style>
     <script defer src="./assistant-config.js"></script>
     <script defer src="./app.js"></script>
   </head>
@@ -44,13 +45,13 @@
         </div>
 
         <aside class="assistant-panel" aria-labelledby="assistant-title" data-assistant-slot>
-          <div class="assistant-topline"><span class="assistant-orbit" aria-hidden="true"><span></span></span><span>WRS / PORTFOLIO ASSISTANT</span><span class="assistant-status" id="assistant-status">INTEGRATION RESERVED</span></div>
+          <div class="assistant-topline"><span class="assistant-orbit" aria-hidden="true"><span></span></span><span>WRS / PORTFOLIO ASSISTANT</span><span class="assistant-status" id="assistant-status">LIVE</span></div>
           <div class="assistant-body" id="assistant-mount">
-            <div class="assistant-greeting"><div class="assistant-avatar" aria-hidden="true">✳</div><div><h2 id="assistant-title">Ask about my work</h2><p>This space is reserved for my WRS-powered assistant. Once connected, you’ll be able to ask about projects, methods, and results here.</p></div></div>
+            <div class="assistant-greeting"><div class="assistant-avatar" aria-hidden="true">✳</div><div><h2 id="assistant-title">Ask about my work</h2><p>My WRS-powered assistant can answer questions about my projects, methods, background, and results.</p></div></div>
             <div class="assistant-examples" aria-label="Example questions"><span>What did the flashcard fine-tune improve?</span><span>How was the churn model evaluated?</span></div>
-            <div class="assistant-input-preview" aria-hidden="true"><span>Ask a question…</span><span>↗</span></div>
+            <button class="assistant-input-preview" type="button" onclick="window.dispatchEvent(new CustomEvent('web-rag:open'))"><span>Ask a question…</span><span aria-hidden="true">↗</span></button>
           </div>
-          <div class="assistant-footer"><span>Powered by my <a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">Web-RAG platform</a></span><span>CONNECT SOON</span></div>
+          <div class="assistant-footer"><span>Powered by my <a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">Web-RAG platform</a></span><span data-assistant-state>OPEN CHAT</span></div>
         </aside>
       </section>
 
@@ -84,5 +85,6 @@
 
       <footer id="contact" class="shell footer"><div><span class="section-kicker">LET’S CONNECT</span><h2>Interested in building<br /><em>something useful?</em></h2></div><div class="footer-links"><a href="https://github.com/xenostate" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://huggingface.co/tenroman" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a><a href="https://wrs.kz" target="_blank" rel="noopener noreferrer">WRS ↗</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Ten Roman</span><span>Applied AI / ML engineering</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
+    <script src="https://wrs.kz/widget.js?v=inline-card-3" data-site-id="46" data-api="https://wrs.kz" data-container="#assistant-mount" data-title="Ask about my work" data-inline-start-closed="true" data-inline-hide-header="true" data-inline-min-height="280" data-theme="dark"></script>
   </body>
 </html>
