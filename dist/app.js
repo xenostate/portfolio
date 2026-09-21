@@ -1,4 +1,5 @@
 (() => {
+  const isRussian = document.documentElement.lang === "ru";
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
@@ -17,11 +18,11 @@
 
   const iframe = document.createElement("iframe");
   iframe.src = url.href;
-  iframe.title = "Ask Ten Roman — portfolio assistant";
+  iframe.title = isRussian ? "Спросить Ten Roman — портфолио-ассистент" : "Ask Ten Roman — portfolio assistant";
   iframe.loading = "lazy";
   iframe.referrerPolicy = "strict-origin-when-cross-origin";
   iframe.style.cssText = "display:block;width:100%;height:350px;border:0;background:transparent";
   mount.replaceChildren(iframe);
   mount.style.padding = "0";
-  status.textContent = "ASSISTANT LIVE";
-});
+  status.textContent = isRussian ? "АССИСТЕНТ АКТИВЕН" : "ASSISTANT LIVE";
+})();

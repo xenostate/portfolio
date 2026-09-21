@@ -1,0 +1,32 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.language-switch {
+  min-width: 38px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  color: var(--acid);
+  font: 500 12px "DM Mono", monospace;
+}
+
+.language-switch:hover {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--bg);
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 10px;
+  }
+
+  .language-switch {
+    min-width: 34px;
+    height: 30px;
+  }
+}

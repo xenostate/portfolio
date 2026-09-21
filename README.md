@@ -2,6 +2,8 @@
 
 A one-page, static portfolio for applied AI and machine-learning work. Project numbers are sourced from the local XGBoost churn experiment and the published flashcard model card; WRS architecture is sourced from the local `ragskill` README. No RAG performance benchmark is claimed.
 
+The English version is served at `/`, with a complete Russian translation at `/ru/`. Both pages include an EN/RU switch and reciprocal `hreflang` metadata.
+
 ## Connect the portfolio assistant
 
 The first-screen assistant area intentionally ships as a clearly labeled reserved space. To activate it, edit `dist/assistant-config.js` and set `embedUrl` to an HTTPS page that permits embedding and hosts your WRS-powered portfolio assistant. The portfolio will replace the placeholder with an iframe. Do not put API keys in this public JavaScript file.
