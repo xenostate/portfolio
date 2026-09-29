@@ -6,7 +6,7 @@ The English version is served at `/`, with a complete Russian translation at `/r
 
 ## Portfolio assistant
 
-The first-screen assistant card keeps its designed introduction on initial load. Activating its question field mounts WRS site `46` inside the card body using the widget's on-demand inline, headerless, dark-theme options. The assistant never becomes a floating bubble, and no API key is stored in the portfolio.
+The first-screen assistant card keeps its designed introduction on initial load. Activating its question field mounts WRS site `46` inside the card body using the widget's on-demand inline, headerless, dark-theme options. The embed locks the portfolio's lime/slate palette and minimal preset, so changes to the site's general WRS appearance configuration do not restyle the portfolio. The assistant never becomes a floating bubble, and no API key is stored in the portfolio.
 
 ## VPS deployment
 
