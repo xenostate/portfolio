@@ -1,6 +1,6 @@
-# Ten Roman — portfolio
+# Roman Ten — portfolio
 
-A one-page, static portfolio for applied AI and machine-learning work. Project numbers are sourced from the local XGBoost churn experiment and the published flashcard model card; WRS architecture is sourced from the local `ragskill` README. No RAG performance benchmark is claimed.
+A one-page, static portfolio for applied AI and full-stack work. It leads with a WRS engineering case study and includes the flashcard fine-tuning project. The WRS details are checked against the public `ragskill` repository. The flashcard result is framed as a small 20-passage evaluation, not a general performance claim. No RAG quality or customer-impact benchmark is claimed.
 
 The English version is served at `/`, with a complete Russian translation at `/ru/`. Both pages include an EN/RU switch and reciprocal `hreflang` metadata.
 
@@ -20,10 +20,9 @@ The permanent server names are `tenroman.com` and `www.tenroman.com`; `portfolio
 
 - Flashcard evaluation: <https://huggingface.co/tenroman/qwen3-vl-8b-flashcard-qlora>
 - Flashcard code: <https://github.com/xenostate/qwen-flashcard-qlora>
-- WRS design: local `ragskill/README.md`
-- Churn evaluation: local `classic_ML/churn/artifacts/metrics.json`
-- CS2 project: <https://github.com/xenostate/binaryclassificationcs2>
+- WRS implementation: <https://github.com/xenostate/ragskill>
+- Contact and identity: `Roman_Ten_Resume.docx`
 
-## Update before sharing widely
+## Before publishing content changes
 
-The site is a concise project portfolio. Add a preferred contact email and resume link if you want recruiters to contact you directly. Recheck the results and public project links when replacing the synthetic churn dataset or rerunning the model.
+Keep the downloadable resume in `dist/Roman_Ten_Resume.pdf` aligned with the current site copy. Recheck the flashcard result and model-card link after a new training and evaluation run. After publishing this copy, reindex the portfolio in WRS so the embedded assistant has current project information.

@@ -18,7 +18,7 @@
 
   const iframe = document.createElement("iframe");
   iframe.src = url.href;
-  iframe.title = isRussian ? "Спросить Ten Roman — портфолио-ассистент" : "Ask Ten Roman — portfolio assistant";
+  iframe.title = isRussian ? "Спросить Roman Ten — портфолио-ассистент" : "Ask Roman Ten — portfolio assistant";
   iframe.loading = "lazy";
   iframe.referrerPolicy = "strict-origin-when-cross-origin";
   iframe.style.cssText = "display:block;width:100%;height:350px;border:0;background:transparent";
